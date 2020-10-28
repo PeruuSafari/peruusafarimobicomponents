@@ -1,8 +1,8 @@
 name: peruusafarimobicomponents
-description: A new Flutter package project.
+description: PeruuSafari - Mobile application -> Common components.
 version: 0.0.1
-author:
-homepage:
+author: Raphael Chaula<raphaelchaula@gmail.com>
+homepage: https://github.com/PeruuSafari/peruusafarimobicomponents.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

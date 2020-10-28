@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 2020-10-29.
 
-* TODO: Describe initial release.
+* PeruuSafariMobiComponents: Widgets, Icons & behavior common to Flutter mobile applications.

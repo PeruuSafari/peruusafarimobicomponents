@@ -1,0 +1,46 @@
+name: peruusafarimobicomponents
+description: A new Flutter package project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  photo_view: ^0.10.2
+  cached_network_image: ^2.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # Assets:
+  assets:
+    - assets/images/bus.png
+    - assets/images/cover.png
+    - assets/images/avatar.png
+    - assets/images/creditcard.png
+
+  # Fonts
+  fonts:
+    - family:  Peruu
+      fonts:
+        - asset: assets/fonts/Peruu.ttf

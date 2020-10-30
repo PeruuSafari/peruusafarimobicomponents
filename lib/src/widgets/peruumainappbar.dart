@@ -7,10 +7,10 @@ class PeruuMainAppBar extends AppBar {
   final VoidCallback onClickMenu;
   final PreferredSizeWidget bottom;
   PeruuMainAppBar({
+    this.actions,
+    this.bottom,
+    this.onClickMenu,
     @required this.context,
-    @required this.actions,
-    @required this.bottom,
-    @required this.onClickMenu,
   }) : super(
           textTheme: Theme.of(context).textTheme,
           iconTheme: Theme.of(context).iconTheme,

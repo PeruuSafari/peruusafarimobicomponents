@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:peruusafarimobicomponents/icons.dart';
 
 class PeruuAppAlert extends StatelessWidget {
   final String title;
   final String action;
   final String subtitle;
-  final IconData alertIcon;
   final VoidCallback onPressAction;
 
   const PeruuAppAlert({
@@ -13,7 +13,6 @@ class PeruuAppAlert extends StatelessWidget {
     @required this.title,
     @required this.action,
     @required this.subtitle,
-    @required this.alertIcon,
     @required this.onPressAction,
   }) : super(key: key);
   @override
@@ -39,7 +38,7 @@ class PeruuAppAlert extends StatelessWidget {
 
   Widget _alertIcon() {
     return Icon(
-      alertIcon,
+      PeruuIcons.alert,
       size: 76.0,
     );
   }

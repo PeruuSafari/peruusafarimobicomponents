@@ -4,13 +4,13 @@ import 'package:peruusafarimobicomponents/src/icons/peruuicons.dart';
 class PeruuMainAppBar extends AppBar {
   final BuildContext context;
   final List<Widget> actions;
+  final VoidCallback onClickMenu;
   final PreferredSizeWidget bottom;
-  final VoidCallback onClickLeading;
   PeruuMainAppBar({
-    this.context,
-    this.actions,
-    this.bottom,
-    this.onClickLeading,
+    @required this.context,
+    @required this.actions,
+    @required this.bottom,
+    @required this.onClickMenu,
   }) : super(
           textTheme: Theme.of(context).textTheme,
           iconTheme: Theme.of(context).iconTheme,
@@ -23,7 +23,7 @@ class PeruuMainAppBar extends AppBar {
             focusColor: Colors.transparent,
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent,
-            onPressed: () => onClickLeading(),
+            onPressed: () => onClickMenu(),
           ),
           actions: actions,
           bottom: bottom,

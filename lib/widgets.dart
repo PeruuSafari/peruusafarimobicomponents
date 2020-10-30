@@ -1,5 +1,6 @@
 library widgets;
 
+export 'src/widgets/peruuavatar.dart';
 export 'src/widgets/peruuappalert.dart';
 export 'src/widgets/peruuappsucess.dart';
 export 'src/widgets/peruuappdialogs.dart';

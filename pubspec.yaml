@@ -1,7 +1,6 @@
 name: peruusafarimobicomponents
 description: PeruuSafari - Mobile application -> Common components.
 version: 0.0.1
-author: Raphael Chaula<raphaelchaula@gmail.com>
 homepage: https://github.com/PeruuSafari/peruusafarimobicomponents.git
 
 environment:
@@ -35,8 +34,8 @@ flutter:
   # Assets:
   assets:
     - assets/images/bus.png
+    - assets/images/user.png
     - assets/images/cover.png
-    - assets/images/avatar.png
     - assets/images/creditcard.png
 
   # Fonts

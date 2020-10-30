@@ -9,11 +9,13 @@ Map<AvatarPlaceholder, String> placeholders = {
 };
 
 class PeruuAvatar extends StatelessWidget {
+  final double size;
   final String imageurl;
   final AvatarPlaceholder placeholder;
 
   const PeruuAvatar({
     Key key,
+    this.size,
     @required this.imageurl,
     @required this.placeholder,
   }) : super(key: key);
@@ -24,22 +26,22 @@ class PeruuAvatar extends StatelessWidget {
       child: CachedNetworkImage(
         imageUrl: imageurl,
         fit: BoxFit.cover,
-        height: 40.0,
-        width: 40.0,
+        width: size ?? 36.0,
+        height: size ?? 36.0,
         placeholder: (context, url) {
           return Image.asset(
             placeholders[placeholder],
             fit: BoxFit.cover,
-            height: 40.0,
-            width: 40.0,
+            width: size ?? 36.0,
+            height: size ?? 36.0,
           );
         },
         errorWidget: (context, url, error) {
           return Image.asset(
             placeholders[placeholder],
             fit: BoxFit.cover,
-            height: 40.0,
-            width: 40.0,
+            width: size ?? 36.0,
+            height: size ?? 36.0,
           );
         },
       ),

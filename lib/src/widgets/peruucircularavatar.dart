@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-class PeruuAvatar extends StatelessWidget {
+class PeruuCircularAvatar extends StatelessWidget {
   final double size;
   final String imageurl;
   final String assetimageurl;
 
-  const PeruuAvatar({
+  const PeruuCircularAvatar({
     Key key,
     this.size,
     @required this.imageurl,
@@ -16,7 +16,7 @@ class PeruuAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: size / 2 ?? 18.0,
+      radius: size == null ? 18.0 : size / 2,
       backgroundColor: Colors.transparent,
       child: ClipOval(
         child: CachedNetworkImage(

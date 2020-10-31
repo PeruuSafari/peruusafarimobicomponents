@@ -4,7 +4,7 @@ import 'package:photo_view/photo_view_gallery.dart';
 import 'package:peruusafarimobicomponents/widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-class HomeDialogs {
+class PeruuDialogs {
   static void showGalleryDialog({
     @required String title,
     @required List<String> images,

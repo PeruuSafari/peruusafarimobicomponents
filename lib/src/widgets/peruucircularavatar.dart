@@ -16,28 +16,28 @@ class PeruuCircularAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: size == null ? 18.0 : size / 2,
+      radius: size == null ? 16.0 : size / 2,
       backgroundColor: Colors.transparent,
       child: ClipOval(
         child: CachedNetworkImage(
           imageUrl: imageurl,
           fit: BoxFit.cover,
-          width: size ?? 36.0,
-          height: size ?? 36.0,
+          width: size ?? 32.0,
+          height: size ?? 32.0,
           placeholder: (context, url) {
             return Image.asset(
               assetimageurl,
               fit: BoxFit.cover,
-              width: size ?? 36.0,
-              height: size ?? 36.0,
+              width: size ?? 32.0,
+              height: size ?? 32.0,
             );
           },
           errorWidget: (context, url, error) {
             return Image.asset(
               assetimageurl,
               fit: BoxFit.cover,
-              width: size ?? 36.0,
-              height: size ?? 36.0,
+              width: size ?? 32.0,
+              height: size ?? 32.0,
             );
           },
         ),
